@@ -16,7 +16,6 @@ export default class Imageblock extends Component {
         })
     }
 
-    //makes a call to the NASA api and gets the picture of the day object
     async componentDidMount() {
         const res = await fetch('https://api.nasa.gov/planetary/apod?api_key=yCCnB4GtOJf4czYyEE5uVPoHpQYhpIzdSYhrjcDq');
         const data = await res.json();
