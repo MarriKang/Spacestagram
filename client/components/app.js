@@ -13,12 +13,15 @@ export default class App extends Component {
         return (
             <div>
                 <header>
+                    <img src="images/logo.png" id="logo"/>
                     <h1>Starstagram</h1>
                     <h2>Brought to you by NASA's image API</h2>
                 </header>
+                <div className="image-gallery">
                 {arrayForImages.map((x, index) => {
                     return <Imageblock key={index}/>
                 })}
+                </div>
             </div>
         )
     }

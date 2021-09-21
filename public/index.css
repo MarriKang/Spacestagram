@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Righteous&display=swap');
+
+header {
+    font-size: 2em;
+    text-align: center;
+}
+
+#logo {
+    max-width: 6em;
+    margin-top: 3em;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    margin: 0.5em 1em 0.1em 1em;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    margin: 0.5em 1em 2em 1em;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-block {
+    box-sizing: border-box;
+    float: left;
+    background-color: blue;
+    width: 30%;
+}
+
+.image {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.liked {
+
+}
+
+.unliked {
+
+}
+
+@media (min-width: 850px) {
+    :root {
+        font-size: 0.875em;
+    }
+}
