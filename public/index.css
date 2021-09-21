@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Righteous&display=swap');
 
+:root {
+    --dark-blue: #18014A;
+    --drop-shadow: #c4c4c4;
+}
+
 header {
     font-size: 2em;
     text-align: center;
+    color: var(--dark-blue);
 }
 
 #logo {
     max-width: 6em;
-    margin-top: 3em;
+    margin-top: 2.5em;
 }
 
 h1 {
@@ -30,8 +36,15 @@ h2 {
 .image-block {
     box-sizing: border-box;
     float: left;
-    background-color: blue;
-    width: 30%;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    width: 28em;
+    margin-bottom: 2em;
+    filter: drop-shadow(0.4em 0.4em 0.5em var(--drop-shadow));
+}
+
+.block-text {
+    margin: 0 1em 0 1em;
 }
 
 .image {
@@ -39,16 +52,59 @@ h2 {
     width: 100%;
 }
 
-.liked {
+.image-block button {
+    float: right;
+    margin: 0 1em 1em 0;
+    padding: 0.4em 2em 0.4em 2em;
+    border-radius: 0.5em;
+}
 
+.liked {
+    border: 1px solid var(--dark-blue);
+    background-color: var(--dark-blue);
+    color: white;
 }
 
 .unliked {
-
+    border: 1px solid grey;
+    background-color: white;
+    color: grey;
+    box-shadow: none;
 }
 
-@media (min-width: 850px) {
+.subtitle {
+    color: grey;
+    font-size: 0.875em;
+}
+
+@media (max-width: 850px) {
     :root {
         font-size: 0.875em;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header {
+        padding-bottom: 0.2em;
+    }
+
+    h1 {
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: 0.5em;
+    }
+
+    #logo {
+        max-width: 3em;
+    }
+
+    .image-block {
+        width: 100%;
     }
 }
